@@ -8,3 +8,7 @@ run the following command: nodemon app.js
 Finally, open up your browser and type 'localhost:3000' in your search bar to open up your web gallery!
 
 Make an account, and enjoy!
+
+Documentation can be found in the doc folder
+
+Web gallery was meant to be a project for learning more about Javascript, HTML, and CSS along with understanding the REST Api, DOM, and overall more on making dynamic webpages.
