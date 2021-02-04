@@ -1,0 +1,21 @@
+{
+  "name": "webgallery",
+  "version": "1.0.0",
+  "description": "Web gallery for a2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muizz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "cookie": "^0.4.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "nedb": "^1.8.0"
+  }
+}

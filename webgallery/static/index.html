@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>WebGallery</title>
+  <link href="./style/main.css" rel="stylesheet" type="text/css"/>
+	<link href="./style/comment_section.css" rel="stylesheet" type="text/css"/>
+	<link href="./style/comment_form.css" rel="stylesheet" type="text/css"/>
+	<link href="./style/img_view_section.css" rel="stylesheet" type="text/css"/>
+	<link href="./style/add_img_form.css" rel="stylesheet" type="text/css"/>
+	<link href="./style/comment.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<header>
+		<a href="./index.html" id="title">WebGallery</a>
+		<a href="./login.html" id="signin_button" class="btn header_btn hidden">Sign in or Sign up</a>
+        <a href="/signout/" id="signout_button" class="btn header_btn hidden">Sign out</a>
+	</header>
+
+	<p id="error_box"></p>
+
+	<h2 id="welcome_message">Sign in or Sign up first</h2>
+
+	<div class = "outer_region hidden" id="main_page">
+		<div class = "complex_form_section" id="form_section">
+			<div class= "complex_comment_section" id ="comment_section">
+				<div class="comments_section_title">Comment Section</div>
+				<form class="complex_comment_form" id="create_comment_form">
+					<textarea rows="3" id="comment_content" class="cmt_form_element" name="user_message" placeholder="Enter your comment" required></textarea>
+					<button type="submit" class="cmt_form_btn">Post Comment</button>
+				</form>
+			
+				<div class="comments_subheader">Comments</div>
+			
+				<div class="complex_comment_section" id="comments">
+			  
+					<div class="comment_container">
+						<!--COMMENTS GO HERE-->
+					</div>
+			  
+				</div>
+			
+				<div class="navigation_buttons_container">
+					<div class="cmt_nav_btn" id="prev_cmt_page">prev page</div>
+					<div class="cmt_nav_btn" id="next_cmt_page">next page</div>
+				</div>
+			</div>
+			
+			<form class="complex_img_form" id="submit_img_form">
+			  <div class="header">Submit an Image here!</div>
+			  <div class="subheader">Title</div>
+			  <input type="text" id="img_title" class="img_form_element" placeholder="Enter image's title" name="img_title" required/>
+			  
+			  <div class="subheader">Upload image here</div>
+			  <input type="file" id="img_file" class="img_form_element" placeholder="Enter the URL for this img" accept="image/*" name="picture" required/>
+			  
+			  <button type="submit" class="img_form_btn" id="img_submission">Submit</button>
+			</form>
+			<button type="button" class="img_form_btn" id="show_btn">Show/Hide Img_submissions</button>
+			
+		</div>
+		
+		<div class="seperator"></div>
+		
+		<div class = "complex_img_view" id = "image_section">
+			<div class="img_section_title">Images Section</div>
+			<label class="img_form_element">Select users gallery
+				<select id="post_username" class="img_form_element">
+				</select>
+			</label>
+			
+			<div class="img_container" id="curr_img">
+				<!--IMAGES GO HERE-->
+			</div>
+			
+			<div class="img_nav_btn_container" id="img_nav_butons">
+			  <div class="img_nav_btn" id="prev_img">Prev</div>
+			  <div class="img_nav_btn" id="del_img">Delete this Image</div>
+			  <div class="img_nav_btn" id="next_img">Next</div>
+			</div>
+		</div>
+	</div>
+	
+	    
+	<script src="./js/api.js"></script>
+    <script src="./js/index.js"></script>
+
+	<footer>
+		<p>Made by Muizz Ahmed</p>
+        <a href='./credits.html'>credits</a>
+    </footer>
+</body>
+</html>

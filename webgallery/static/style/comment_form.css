@@ -1,0 +1,45 @@
+.complex_comment_form{
+	width:350px;
+	border-radius: 3px;
+    border: 2px #3C3D3F solid;
+	background-color:#002699;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top:10px;
+	display:flex;
+	flex-direction:column;
+}
+
+.complex_comment_form .title{
+	font-size:14px;
+	font-weight:bold;
+	background-color:#555555;
+	text-align:center;
+	padding: 5px 0px 5px 0px;
+}
+
+.complex_comment_form .cmt_form_element{
+	margin:5px;
+    font-size: 12px;
+    border-radius:5px;
+	border: 3px #3C3D3F solid;
+    padding:5px 10px 5px 10px;
+}
+
+.cmt_form_btn{
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:5px;
+    border-radius:10px;
+    text-align:center;
+    font-size: 12px;
+    color: #3C3D3F;
+    background: white;
+    border: 2px #3C3D3F solid;
+    padding: 5px 10px 5px 10px;
+}
+
+.cmt_form_btn:hover {
+  background: #002699;
+  color: #ffffff;
+}
